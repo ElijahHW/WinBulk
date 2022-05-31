@@ -13,6 +13,6 @@
 `Set-ExecutionPolicy RemoteSigned` 
 
 - Then download the multi tool: 
-- https://github.com/ElijahHW/GoodWin.git
+  - https://github.com/ElijahHW/GoodWin.git
 - Then run the setup script `Goodwin.ps1`
 - In Powershell: `./Goowin.ps1`
