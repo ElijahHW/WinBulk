@@ -4,20 +4,20 @@
 
 
 ## Chocolatey as Package Manager!
-****
+
 > "You've never deployed software faster than you will with Chocolatey." 
 
 - Unattended installations
 
 ## To-Do:
-****
+
 - Make install * (all) an option
 - Make option for choosing packages to install within a category.
 - GUI?
 - ...
 
 ### To use:
-****
+
 - Open Powershell in elevated mode (administrator) and then run:
 `Set-ExecutionPolicy RemoteSigned` 
 
@@ -27,7 +27,7 @@
 - In Powershell: `./Goowin.ps1`
 
 ## Goodwin File Hierachy
-****
+
 ```s
 ├── packages
 │   ├── comms.config
