@@ -16,7 +16,7 @@
 - GUI?
 - ...
 ****
-### To use:
+## To use:
 - Open Powershell in elevated mode (administrator) and then run:
 `Set-ExecutionPolicy RemoteSigned` 
 
