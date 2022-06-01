@@ -1,5 +1,5 @@
 # Goodwin Multi-tool
-****
+
 **Goodwin is a tool for windows, to install multiple programs at once in an instant, as well as optimizing and debloating windows**
 
 
@@ -53,7 +53,7 @@
 2 directories,  20 files   
 ```
 
-Author
+Author ~
 ****
 
 │ Elijah
