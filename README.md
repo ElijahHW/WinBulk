@@ -9,15 +9,14 @@
 
 - Unattended installations
 
-## To-Do:
+## To-Do List:
 
 - Make install * (all) an option
 - Make option for choosing packages to install within a category.
 - GUI?
 - ...
-
+****
 ### To use:
-
 - Open Powershell in elevated mode (administrator) and then run:
 `Set-ExecutionPolicy RemoteSigned` 
 
