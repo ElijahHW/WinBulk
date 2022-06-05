@@ -1,6 +1,24 @@
 
 # FUNCTIONS - START # 
 
+function ValidateResponse {
+$validResponse = "0"
+do {
+    $response = read-host -Prompt $msg
+    if($packList -match $response)
+    {      
+        $validResponse = "1"
+        GetPackByName
+    }
+    elseif ($response -match '^\d+$') 
+    {
+        $validResponse = "1"
+        GetPackByNumber
+    } 
+} until ($validResponse -eq 1) 
+
+}
+
 function GetFiles {
     foreach($pack in $packList)
     {

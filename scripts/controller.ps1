@@ -1,24 +1,17 @@
 
 # Initalizing things
+Clear-Host
 Write-Output "Initalizing.."
 . ./variables.ps1
 . ./functions.ps1
 
 # CONTROLLER - START #
-Write-Output '' | GetFiles
-Write-Output "Write the name or number of which category to inspect"
+GetFiles
 Write-Output '~~~~~~~~~~'
 Write-Output $packArray
 Write-Output '~~~~~~~~~~'
+$msg = "Enter the name or number of which category to inspect"
 
-$response = read-host " "
-if($packList -match $response)
-    {      
-        GetPackByName
-    }     
-elseif([int]::TryParse($response, [ref]$i))
-    {
-        GetPackByNumber
-    }  
+ValidateResponse
 
-
+# CONTROLLER - END #
