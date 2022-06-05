@@ -2,21 +2,19 @@
 # FUNCTIONS - START # 
 
 function ValidateResponse {
-$validResponse = "0"
-do {
-    $response = read-host -Prompt $msg
-    if($packList -match $response)
-    {      
-        $validResponse = "1"
-        GetPackByName
-    }
-    elseif ($response -match '^\d+$') 
-    {
-        $validResponse = "1"
-        GetPackByNumber
-    } 
-} until ($validResponse -eq 1) 
-
+        do {
+            $response = read-host -Prompt $msg
+            if($packList -match $response)
+            {      
+                $validResponse = "1"
+                GetPackByName
+            }
+            elseif ($response -match '^\d+$') 
+            {
+                $validResponse = "1"
+                GetPackByNumber
+            } 
+        } until ($validResponse -eq 1) 
 }
 
 function GetFiles {
@@ -33,8 +31,8 @@ function GetPackByName ($resultPack) {
     foreach($pack in $packList)
     {
         if($response -eq $pack) {
-        $resultPack = $pack
-        run
+            $resultPack = $pack
+            RunChoco
         } 
     }     
 }
@@ -45,21 +43,21 @@ function GetPackByNumber ($resultPack) {
         if($response -eq $pack[1]) {
             $pack = $pack[4..99] -join ''
             $resultPack = $pack 
-            run 
+            RunChoco 
         } 
     } 
 }
 
-function Run {
-    Write-Output "Running the file: $resultPack$ps1" 
+function RunChoco {
+    Write-Output "The following programs will be installed:"
+    Write-Output '~~~~~~~~~~' 
     Get-Content $packages$resultPack$config
-        $response = read-host "Do you want to install the listed programs? ([Y]es/[N]o)"
+    Write-Output '~~~~~~~~~~'
+    $response = read-host "Do you want to install the listed programs? ([Y]es/[N]o)"
         if($response -like "y**")
         {
             Get-Content $packages$resultPack$config | ForEach-Object{$install + " " + $_ + " " + $params} | Invoke-Expression
         } elseif($response -like "n*") {Write-Output "Skipped Install.."}
-
-        break;
 }
 
 # FUNCTIONS - END #
