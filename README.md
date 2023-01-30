@@ -1,6 +1,6 @@
-# Goodwin Multi-tool (!WIP!)
+# WinBulk Multi-tool (!WIP!)
 
-**Goodwin is a tool for windows, to install multiple programs at once in an instant, as well as optimizing and debloating windows**
+**WinBulk is a tool for windows, to install multiple programs at once in an instant, as well as optimizing and debloating windows**
 
 
 ## Chocolatey as Package Manager!
@@ -21,11 +21,11 @@
 `Set-ExecutionPolicy RemoteSigned` 
 
 - Then download the multi tool: 
-  - https://github.com/ElijahHW/GoodWin.git
-- Then run the setup script `Goodwin.ps1`
+  - https://github.com/ElijahHW/WinBulk.git
+- Then run the setup script `WinBulk.ps1`
 - In Powershell: `./Goowin.ps1`
 
-## Goodwin File Hierachy
+## WinBulk File Hierachy
 
 ```s
 ├── packages
@@ -47,7 +47,7 @@
 │   ├── prema.ps1
 │   └── system.ps1       
 ├── readme.md
-└── goodwin.ps1
+└── WinBulk.ps1
 
 2 directories,  20 files   
 ```
