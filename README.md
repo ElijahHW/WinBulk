@@ -12,7 +12,7 @@
 1. Open Powershell in elevated mode (administrator) and then run:
 `Set-ExecutionPolicy RemoteSigned` 
 
-2. Download the multi tool from: https://github.com/ElijahHW/WinBulk.git
+2. Download the multi tool from: https://github.com/ElijahHW/WinBulk/archive/refs/heads/main.zip
 3. Run the setup script `WinBulk.ps1`
 
 ## WinBulk File Hierachy
