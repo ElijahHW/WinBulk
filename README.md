@@ -1,6 +1,8 @@
 # WinBulk Installer-tool | WIP 📦
 
-"WinBulk: The Bulk Software Installer - because who has time to install one program at a time? With WinBulk, you can install all programs in bulk, leaving you with more time to do the things that really matter. WinBulk is a tool for Windows, to install multiple programs at once with unattended installations, using Chocolatey as Package Manager to maximise the installation process."
+WinBulk: The Bulk Software Installer - because who has time to install one program at a time? With WinBulk, you can install all programs in bulk, leaving you with more time to do the things that really matter. WinBulk is a tool for Windows, to install multiple programs at once with unattended installations, using Chocolatey as Package Manager to maximise the installation process. 
+
+*WinBulk is a work in progress tool.* 
 
 ### To-Do List 📝
 
