@@ -1,15 +1,12 @@
-## VARIABLES - START #
-
-$packages = "packages\"
-$install = "choco install"
-$params = "-y" # add -f if you want to force install this program
-$config = ".config"
-$ps1 = ".ps1"
-$i=0
+$packagesPath = "packages\"
+$installCommand = "choco install"
+$installParams = "-y" # add -f if you want to force install this program
+$configExt = ".config"
+$ps1Ext = ".ps1"
+$i = 0
 $packArray = New-Object -TypeName 'System.Collections.ArrayList'
-$packList = Get-ChildItem "packages\" | ForEach-Object{($_ -replace(".config", ""))} 
-$validResponse = 0
-$msg = "Enter the name or number of which category to inspect"
-$numberRange = (Get-ChildItem .\packages\).count
-
-## VARIABLES - END #
+$packList = Get-ChildItem -Path $packagesPath | ForEach-Object { $_.Name -replace $configExt }
+$validResponse = $false
+$msg = Clear-Host | Out-String
+$msg += "Enter the name or number of which category to inspect"
+$numberRange = (Get-ChildItem -Path $packagesPath).Count
