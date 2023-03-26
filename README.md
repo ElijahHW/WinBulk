@@ -10,13 +10,13 @@ WinBulk: The Bulk Software Installer - because who has time to install one progr
 - Make the tool more user friendly.
 - Ability to make and add to custom packages.
 
-## Usage 🛠️
+### Usage 🛠️
 1. Open Powershell in elevated mode (administrator) and then run:
 `Set-ExecutionPolicy RemoteSigned` 
 2. Download the multi tool from: https://github.com/ElijahHW/WinBulk/archive/refs/heads/main.zip
 3. Run the setup script `WinBulk.ps1`
 
-## WinBulk File Hierachy 📂
+### WinBulk File Hierachy 📂
 
 ```s
 ├── packages
